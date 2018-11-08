@@ -1,4 +1,4 @@
-$(document).ready(function(){	 
+$(document).ready(function(){
   main()
 });
 
@@ -10,7 +10,6 @@ var main = function() {
 	  		opacity:'0'
     	}, 600);
     	$('#mask2').hide();
-		$('.main-menu-mobile span').text('Меню');
 		$('.main-menu-mobile').removeClass('active');
   	} else {
     	$('.head-top-menu-nav').animate({
@@ -18,10 +17,7 @@ var main = function() {
 	  		opacity:'0.85'
     	}, 600);
     	$('#mask2').show();
-		$('.main-menu-mobile span').text('Закрыть');
 		$('.main-menu-mobile').addClass('active');
 	}
   });
 };
-
-

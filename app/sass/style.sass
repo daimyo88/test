@@ -1,0 +1,146 @@
+@import '_part1-header.sass'
+@import '_part2-about.sass'
+@import '_part3-portfolio.sass'
+@import '_part4-products.sass'
+@import '_part5-clients.sass'
+@import '_part6-teamworks.sass'
+@import '_part7-services.sass'
+@import '_part8-plans.sass'
+@import '_part9-twitt.sass'
+@import '_part10-blog.sass'
+@import '_part11-follow.sass'
+@import '_part12-finedus.sass'
+@import '_part13-footer.sass'
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700&subset=latin-ext')
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:400,700&subset=latin-ext')
+
+$bg-color: #fff
+$text-wphone: #505050
+$text-bphone: #a4a4a4
+$text-red: #ff0036
+
+*
+	margin: 0 
+	padding: 0
+.wrapp
+	margin: 0 auto
+	max-width: 1170px
+.slide
+   position: relative
+.slider-img1
+    background: url(../img/main-photo.jpg)
+    background-position: center
+    max-width: 100%
+    height: 100vh
+    background-size: cover
+    display: flex
+    flex-direction: column
+    justify-content: center
+    items-align: center
+
+.head-main-overlay
+	&:hover
+		background-color: rgba(0,0,0,0.7)
+		position: absolute
+		left: 0
+		top: 0
+		height: 100%
+		width: 100%
+		display: block
+.head-main-top
+	background-color: rgba(0,0,0,0.5)
+	height: 67px
+	width: 100%
+	box-sizing: border-box
+	position: absolute
+	top: 0
+	border-top: 3px solid #7f7f7f
+
+.slick-next
+    background: url(../img/arrow-right.png)
+    background-repeat: no-repeat
+    background-size: 100%
+    border: none
+    width: 17px
+    height: 28px
+    outline: none
+    cursor: pointer
+    font-size: 0
+    line-height: 0
+    position: absolute
+    right: 30px
+    top: calc(50% - 28px)
+    padding: 0
+    &:hover
+    	background: url(../img/arrow-right-hover.png)
+
+.slick-prev
+    background: url(../img/arrow-left.png)
+    background-repeat: no-repeat
+    background-size: 100%
+    border: none
+    width: 17px
+    height: 28px
+    outline: none
+    cursor: pointer
+    font-size: 0
+    line-height: 0
+    position: absolute
+    left: 30px
+    top: calc(50% - 28px)
+    padding: 0
+    z-index: 1
+    &:hover
+    	background: url(../img/arrow-left-hover.png)
+
+@media screen and (max-width:992px)
+    .slick-next
+        background-size: 80%
+        &:hover
+            background-size: 80%
+            background-repeat: no-repeat
+    .slick-prev
+        background-size: 80%
+        &:hover
+            background-size: 80%
+            background-repeat: no-repeat
+    .head-main-top
+        height: 57px
+        width: 100%
+        border-top: 3px solid #7f7f7f
+
+@media screen and (max-width:768px)
+    .head-main-top
+        height: 45px
+        width: 100%
+        border-top: 3px solid #7f7f7f
+    .slick-next
+        background-size: 70%
+        &:hover
+            background-size: 70%
+            background-repeat: no-repeat
+    .slick-prev
+        background-size: 70%
+        background-repeat: no-repeat
+        &:hover
+            background-size: 70%
+            background-repeat: no-repeat
+
+@media screen and (max-width:480px)
+    .head-main-top
+        height: 40px
+    .slick-next
+        background-size: 50%
+        &:hover
+            background-size: 50%
+            background-repeat: no-repeat
+    .slick-prev
+        background-size: 50%
+        background-repeat: no-repeat
+        &:hover
+            background-size: 50%
+            background-repeat: no-repeat
+
+@media screen and (max-width:320px)
+    .head-main-top
+        height: 35px
